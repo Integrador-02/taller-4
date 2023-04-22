@@ -1,3 +1,10 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Credentials: true');
+header("Access-Control-Allow-Headers: Authorization, Content-Type");
+header("Access-Control-Allow-Methods: *");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +13,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 3 - Drei Models</title>
 </head>
-<body>
-    <video id="video" 
+<body><scrit>const express = require('express')
+            const cors = require('cors')
+            const app = express()
+            
+            app.use(cors())</scrit>
+   <video id="video" 
         playsinline 
+        crossOrigin="anonymous"
         webkit-playsinline 
         muted 
         loop 
-        autoplay 
         width="320" 
         height="240" 
-        style="display: none"
+        style={{ position: "absolute", opacity: 0 }}
+        src ="./video.mp4"
         >
-    <source src ="./video.mp4" type:"video/mp4" ></source>
-    </video>
-    <div id="root"></div>
+   <!-- <source src ="./video.mp4" type:"video/mp4" ></source> -->
+    </video>  <div id="root">
+        
+    </div>
 </body>
 </html>

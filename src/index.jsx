@@ -4,18 +4,21 @@ import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.jsx'
 import { TextureLoader } from 'three'
 
+
+
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
     <Canvas
         camera={ {
-            fov: 90,
+            fov: 50,
             near: 0.1,
-            far: 200,
-            position: [ 0, 7, 10 ]
+            far: 50,
+            position: [ -25, -10, 0 ]
         } }
     >
    
         <Experience />
     </Canvas>
 )
+
