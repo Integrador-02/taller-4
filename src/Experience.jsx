@@ -1,9 +1,6 @@
-
-
-
 import { OrbitControls, Html, Text,Float } from '@react-three/drei'
 import { Suspense, useRef , useState} from 'react'
-import { FrontSide, LinearFilter, TextureLoader, VideoTexture } from 'three'
+import { FrontSide, LinearFilter, VideoTexture, TextureLoader } from 'three'
 
 
 export default function Experience()
@@ -18,7 +15,6 @@ export default function Experience()
     videoTexture.magFilter = LinearFilter;
     //videoTexture.needsUpdate = true;
 
-    const videoRef = useRef(null);
     const textureRef = useRef(null);
 
     const fot = () => {
@@ -76,5 +72,3 @@ export default function Experience()
         </mesh>
     </>
 }
-
-

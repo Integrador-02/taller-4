@@ -13,25 +13,20 @@ header("Access-Control-Allow-Methods: *");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 3 - Drei Models</title>
 </head>
-<body><scrit>const express = require('express')
-            const cors = require('cors')
-            const app = express()
-            
-            app.use(cors())</scrit>
-   <video id="video" 
+<body>
+    <video id="video" 
         playsinline 
-        crossOrigin="anonymous"
         webkit-playsinline 
         muted 
         loop 
+        autoplay 
         width="320" 
         height="240" 
-        style={{ position: "absolute", opacity: 0 }}
-        src ="./video.mp4"
+        style="display: none"
         >
-   <!-- <source src ="./video.mp4" type:"video/mp4" ></source> -->
-    </video>  <div id="root">
-        
-    </div>
+    <source src ="https://1drv.ms/v/s!ArXWvm8l96rPhpcMalpvT5Q6JWs8Xg?e=8blC6n.mp4" type:"video/mp4" ></source>
+    
+    </video>
+    <div id="root"></div>
 </body>
 </html>
